@@ -1,0 +1,123 @@
+:root {
+  --cont-backgroud: #323842;
+  --background: #171a1fff;
+  --grey: #9095a0;
+  --blue: #4069e5;
+}
+
+/* sign container styling */
+.sign_page_conainter {
+  height: 100vh;
+  background-color: var(--cont-backgroud);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign_page_header {
+  margin-right: auto;
+}
+
+/* sign_page_content styling */
+.sign_page_content {
+  background-color: var(--background);
+  padding: 3rem 1rem;
+  display: flex;
+  width: 45%;
+  height: 75vh;
+  flex-direction: column;
+
+  align-items: center;
+}
+.sign_page_content h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 24px;
+}
+.sign_page_content h2 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  margin-top: 0.4rem;
+}
+
+/* sign_form_container styling */
+.sign_form_container {
+  margin-top: 3rem;
+  width: 50%;
+}
+.sign_form_container .sign_form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sign_form .form_group {
+  display: flex;
+  flex-direction: column;
+}
+.sign_form .inputfeild_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* input styling */
+.inputcontainer {
+  position: relative;
+}
+
+.inputcontainer span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+.inputcontainer span i {
+  color: var(--grey);
+}
+.inputcontainer input {
+  width: 100%;
+  color: white;
+  background: transparent;
+  border-radius: 0.3rem;
+  border: 1px solid white;
+  padding: 0.6rem 30px;
+}
+.inputcontainer input::placeholder {
+  color: var(--grey);
+}
+/* forgo_password_container stylng */
+.forgo_password_container {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.forgo_password_container .remember_me {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.remember_me label {
+  font-size: 0.8rem;
+  color: white;
+}
+.forgo_password_container p {
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+/* btn styling */
+.btn_login {
+  padding: 0.6rem;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+footer p {
+  color: white;
+  font-size: 0.9rem;
+}

@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import SideBar from "./sidebar";
 import "../../styles/mainpage.css";
 function MainPage() {
@@ -7,7 +7,9 @@ function MainPage() {
       <div className="mainpage_conatiner">
         {/* main cntainer header */}
         <header className="main_page_header">
-          <img src={logo} alt="logo" />
+          <div className="logo_container">
+            <img src={logo} alt="logo" />
+          </div>
           {/* dropdown container */}
           <div className="selection_dropdown_container">
             <h2>Department Marketing</h2>
@@ -17,6 +19,7 @@ function MainPage() {
             </div>
           </div>
         </header>
+        {/* main page container */}
         <main className="main_page_conatiner">
           {/* ai chat side bar content  */}
           <SideBar />
@@ -63,7 +66,7 @@ function MainPage() {
                 </div>
                 {/* your respose 2 */}
                 <div className="convo_container yourreponse">
-                  <div className="response">
+                  <div className="response res-two">
                     <h3>
                       Give me a list of top 5 digital marketing agencies near me
                       who offers services like social media marketing, content
@@ -73,24 +76,27 @@ function MainPage() {
                   </div>
                 </div>
               </section>
-              <div className="input section">
-                <i className="fa-regular fa-circle-question"></i>
-                <input
-                  type="text"
-                  name="chat"
-                  placeholder="Enter your Marketing Query Here"
-                />
-                <i className="fa-regular fa-paper-plane"></i>
-              </div>
+              {/* input section */}
+              <section className="input_section">
+                <div className="input_box">
+                  <i className="fa-regular fa-circle-question"></i>
+                  <input
+                    type="text"
+                    name="chat"
+                    placeholder="Enter your Marketing Query Here"
+                  />
+                  <i className="fa-regular fa-paper-plane"></i>
+                </div>
+              </section>
+              <section className="footer-section">
+                <small>
+                  Type your next question above or select one from the related
+                  questions section
+                </small>
+              </section>
             </div>
           </div>
         </main>
-        <footer>
-          <p>
-            Type your next question above or select one from the related
-            questions section
-          </p>
-        </footer>
       </div>
     </>
   );

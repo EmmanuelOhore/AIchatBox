@@ -1,0 +1,97 @@
+.main_page_conatiner .side_content {
+  padding: 1rem;
+
+  width: 20%;
+}
+.newchat_section {
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.btn_conatiner{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.btn_newchat{
+  padding: .6rem;
+  background: transparent;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  font-size: .9rem;
+}
+.btn_newchat i{
+  font-size: .7rem;
+}
+.btn_history{
+  padding: .6rem;
+  font-size: .95rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+}
+
+/* /* chat list container section * */
+.chat_list_container{
+  display: flex;
+  margin-top: 2rem;
+
+  flex-direction: column;
+  gap: 1rem;
+}
+.chat_list_container .chat_list_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat_list_container i{
+  font-size: .85em;
+  color: var(--smaller-text)
+;
+
+}
+.chat_list_content .chat{
+  display: flex;
+align-items: center;
+gap: .8rem;
+}
+.chat h2{
+  font-size: .8rem;
+color: var(--large-text);
+  font-weight: 500;
+}
+.chat_list_content .chat_icons{
+  display: flex;
+  gap: .8rem;
+}
+.chat_icons i{
+font-size: .8rem;
+}
+/* settling for the ioptions  */
+.setting_option_container{
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  gap: 1rem;
+}
+.option{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.option h2{
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(  --light-grey);
+
+}
+ .option i{
+  font-size: .8rem;
+  color: var(  --light-grey);
+}

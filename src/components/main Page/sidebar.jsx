@@ -1,3 +1,4 @@
+import "../../styles/sidebar.css";
 const SideBar = () => {
   return (
     <>
@@ -6,11 +7,9 @@ const SideBar = () => {
         <section className="newchat_section">
           <div className="btn_conatiner">
             <button className="btn btn_newchat">
-              {" "}
               <i className="fa-solid fa-plus"></i> New Chat
             </button>
             <button className="btn btn_history">
-              {" "}
               <i className="fa-solid fa-clock-rotate-left"></i> History
             </button>
           </div>
@@ -38,8 +37,18 @@ const SideBar = () => {
                 <i className="fa-regular fa-trash-can"></i>
               </div>
             </div>
+            <div className="chat_list_content">
+              <div className="chat">
+                <i className="fa-regular fa-message"></i>
+                <h2>developement of marketing</h2>
+              </div>
+              <div className="chat_icons">
+                <i className="fa-solid fa-pen"></i>
+                <i className="fa-regular fa-trash-can"></i>
+              </div>
+            </div>
           </div>
-
+{/* settling option section */}
           <div className="setting_option_container">
             <div className="option">
               <i className="fa-solid fa-user-plus"></i>

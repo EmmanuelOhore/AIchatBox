@@ -1,7 +1,21 @@
 import logo from "../../assets/logo2.png";
 import SideBar from "./sidebar";
 import "../../styles/mainpage.css";
+import { useState } from "react";
 function MainPage() {
+  const [dropdown, setdropdown] = useState("marketing");
+  const handlevalue = (e) => {
+    console.log(e.target.value);
+    setdropdown(e.target.value);
+  };
+  const handledynamic=()=>{
+    if(dropdown=== "marketing"){
+      return "Enter your marketing query here..."
+    }else if(dropdown==="sales"){
+      return "Enter your sales query here..."
+    }
+  }
+
   return (
     <>
       <div className="mainpage_conatiner">
@@ -12,7 +26,10 @@ function MainPage() {
           </div>
           {/* dropdown container */}
           <div className="selection_dropdown_container">
-            <h2>Department Marketing</h2>
+            <select value={dropdown} onChange={handlevalue}>
+              <option value={"marketing"}>Department Marketing</option>
+              <option value={"sales"}>Department Sales</option>
+            </select>
             <div className="profile_image">
               <i className="fa-regular fa-circle-user"></i>
               <p>Nithin</p>
@@ -83,7 +100,7 @@ function MainPage() {
                   <input
                     type="text"
                     name="chat"
-                    placeholder="Enter your Marketing Query Here"
+                    placeholder={handledynamic()}
                   />
                   <i className="fa-regular fa-paper-plane"></i>
                 </div>

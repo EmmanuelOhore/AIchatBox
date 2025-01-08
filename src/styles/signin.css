@@ -25,7 +25,7 @@
   padding: 3rem 1rem;
   display: flex;
   width: 45%;
-  height: 75vh;
+  height: auto;
   flex-direction: column;
 
   align-items: center;
@@ -120,4 +120,143 @@
 footer p {
   color: white;
   font-size: 0.9rem;
+}
+
+@media (max-width:1024px) {
+  /* sign_page_content styling */
+  .sign_page_content{
+    width: 70%
+    ;
+  
+  }
+}
+@media (max-width:800px) {
+  .sign_page_header .logo_container img{
+    width:12rem;
+  }
+    /* sign_page_content styling */
+    .sign_page_content{
+      width: 60%;
+      height: auto;
+      padding: 2rem 1rem;
+    }
+    .sign_page_content h1{
+      font-size: 1.1rem;
+    }
+    .sign_page_content h2 {
+      font-size: .9rem;
+    }
+    /* sign_form_container styling */
+    .sign_form_container{
+      width: 70%;
+      margin-top: 2rem;
+    }
+}
+
+@media (max-width:500px) {
+  .sign_page_header .logo_container img{
+    width:11rem;
+  }
+  .sign_page_content{
+    width: 90%;
+    padding:  1rem;
+  }
+  .sign_page_content h1{
+    font-size: 1rem;
+  }
+
+  /* sign_form_container styling */
+  .sign_form_container{
+    width: 90%;
+    margin-top: 1rem;
+  }
+  /* input styling */
+  .inputcontainer span i {
+    font-size:.9rem
+  }
+  .inputcontainer input::placeholder{
+font-size:.7rem;
+  }
+  /* forgo_password_container stylng */
+  .remember_me label,.forgo_password_container p{
+    font-size: .7rem;
+  }
+/* btn styling */
+.btn_login {
+  margin-top: 3rem;
+}
+/* foooteer */
+footer p{
+  font-size: .7rem;
+}
+}
+
+@media (max-width:400px) {
+  .sign_page_header .logo_container img{
+    width:10rem;
+  }
+  .sign_page_content{
+    width: 98%;
+  
+    padding:  1rem;
+  }
+
+  /* sign_form_container styling */
+  .sign_form_container{
+    width: 98%;
+  }
+  /* input styling */
+  .inputcontainer span i {
+    font-size:.9rem
+  }
+  .inputcontainer input::placeholder{
+font-size:.7rem;
+  }
+  /* forgo_password_container stylng */
+  .remember_me label,.forgo_password_container p{
+    font-size: .7rem;
+  }
+/* btn styling */
+.btn_login {
+  margin-top: 2.5rem;
+}
+}
+
+@media (max-width:350px) {
+
+  .sign_page_header .logo_container img{
+    width:9rem;
+  }
+  .sign_page_content{
+    width: 100%;
+
+  padding:  1rem;
+  }
+  .sign_page_content h1{
+    font-size: .9rem;
+  }
+  .sign_page_content h2 {
+    font-size: .7rem;
+  }
+  /* sign_form_container styling */
+  .sign_form_container{
+    width: 98%;
+    margin-top:1.3rem;
+  }
+  /* input styling */
+  .inputcontainer span i {
+    font-size:.9rem
+  }
+  .inputcontainer input::placeholder{
+font-size:.7rem;
+  }
+  /* forgo_password_container stylng */
+  .remember_me label,.forgo_password_container p{
+    font-size: .7rem;
+  }
+/* btn styling */
+.btn_login {
+  margin-top: 2.5rem;
+  font-size:.7rem;
+}
 }

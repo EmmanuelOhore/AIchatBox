@@ -29,10 +29,10 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo_container {
+.main_page_header .logo_container {
   background-color: var(--logo-bg);
 }
-.logo_container img {
+.main_page_header .logo_container img {
   width: 220px;
   height: 42px;
 }
@@ -40,8 +40,9 @@
   display: flex;
   gap: 3rem;
 }
-.selection_dropdown_container h2 {
+.selection_dropdown_container select{
   font-size: 11px;
+  font-weight: 600;
   border: 1px solid black;
   border-radius: 6px;
   background-color: var(--white);
@@ -210,3 +211,228 @@ width: 90% !important;
   margin-top: -.5rem;
  text-align: center;
 }
+
+
+/* resonponsive design */
+@media (max-width:1024px) {
+
+  .main_ai_content_container{
+    padding:1rem;
+  }
+
+
+
+
+  .main_ai_content{
+    width: 100%;
+  }
+  
+/* ai chat header styling */
+.main_ai_content .ai_chat_header {
+  padding: .5rem;
+}
+.ai_chat_header h1{
+  font-size: .9rem;
+}
+.ai_chat_header .suheader {
+  gap: .5rem;
+}
+.suheader h2 ,.suheader i{
+  font-size: .7rem;
+}
+.chat_conversation {
+  padding: .5rem;
+  gap:.5rem;
+}
+.yourreponse .response{
+  padding: .9rem;
+  gap: .5rem;
+}
+.response h3 ,.response i  {
+  font-size:.7rem;
+}
+/* .ai_reply_container styling */
+.ai_reply_container {
+  padding: 0.3rem;
+}
+.ai_reply_container .ai_response {
+  gap: .5rem;
+}
+.ai_response i {
+  font-size: .9rem;
+}
+.ai_response h3 {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+.ai_reply_icon {
+  gap: .8rem;
+}
+.input_section {
+  padding: .5rem;
+}
+
+.input_section input::placeholder,.input_section i{
+  font-size: .8rem;
+}
+.footer-section{
+  margin-top:0;
+}
+.footer-section small{
+  font-size: .7rem;
+}
+}
+
+/* moubile styling */
+@media (max-width:500px) {
+  /* hjeadeing styling */
+  .main_page_header{
+    padding: 0  1rem;
+  }
+  .main_page_header .logo_container img{
+    width: 7rem;
+    height: 2rem;
+  }
+  .selection_dropdown_container{
+    gap: .5rem;
+  }
+  .selection_dropdown_container select{
+    font-size: .5rem;
+    padding: .5rem;
+  }
+
+  /* ai chat content styling */
+  
+  .main_ai_content_container{
+    padding:.5rem;
+  }
+   
+/* ai chat header styling */
+.main_ai_content{
+  gap:.5rem;
+  padding: .5rem 0;
+  
+}
+.main_ai_content .ai_chat_header {
+  padding: .5rem;
+}
+.ai_chat_header h1{
+  font-size: .67rem;
+}
+.ai_chat_header .suheader {
+  gap: .5rem;
+}
+.suheader h2 ,.suheader i{
+  font-size: .5rem;
+}
+
+.chat_conversation {
+  padding: .2rem;
+
+  gap:.5rem;
+}
+.chat_conversation {
+  padding: .4rem 0;
+}
+.yourreponse .response{
+  padding: .4rem;
+  gap: .3rem;
+}
+.response h3 ,.response i  {
+  font-size:.6rem;
+}
+/* .ai_reply_container styling */
+.ai_reply_container {
+  padding: 0.2rem;
+}
+.ai_reply_container .ai_response {
+  gap: .3rem;
+}
+.ai_response i {
+  font-size: .7rem;
+}
+.ai_response h3 {
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+.ai_reply_icon {
+  gap: .8rem;
+}
+.ai_reply_icon i{
+  font-size: .6rem;
+}
+.input_section {
+  padding: .4rem;
+}
+.input_section input::placeholder,.input_section i{
+  font-size: .6rem;
+}
+.footer-section{
+  margin-top:.5rem;
+}
+.footer-section small{
+  font-size: .5rem;
+}
+}
+
+/* small mobile styling */
+@media (max-width:400px) {
+  .footer-section{
+    margin-top:-1rem;
+
+  }
+  .footer-section small{
+    font-size: .35rem;
+
+  }
+  
+.ai_chat_header h1{
+  font-size: .5rem;
+}
+.ai_chat_header .suheader {
+  gap: .5rem;
+}
+.suheader h2 ,.suheader i{
+  font-size: .5rem;
+}
+/* chat conversation styling  */
+
+.response h3 ,.response i  {
+  font-size:.5rem;
+}
+.ai_response h3 {
+  font-size: 0.5rem;
+}
+.input_section {
+  padding: .3rem;
+}
+.input_section input{
+  padding: .4rem;
+}
+.input_section .fa-paper-plane,.input_section .fa-circle-question  {
+  font-size: .6rem;
+  top: 55%;
+}
+.input_section input::placeholder,.input_section i{
+  font-size: .5rem;
+}
+}
+
+
+
+@media (max-width: 350px) {
+  .main_page_header{
+    padding: 0  .5rem;
+  }
+.ai_reply_container h3{
+  line-height: .75rem;
+}
+.ai_chat_header{
+  gap: .3rem;
+}
+.suheader h2{
+line-height: 10px;
+font-size: .4rem;
+}
+}
+

@@ -1,5 +1,10 @@
 import "../../styles/sidebar.css";
 const SideBar = () => {
+
+  const handleworldtrim=(text,wordlimit)=>{
+    const trimmed= text.split(" ").slice(0,wordlimit).join(" ") + " ..."
+    return trimmed
+  }
   return (
     <>
       {" "}
@@ -20,6 +25,7 @@ const SideBar = () => {
               <div className="chat">
                 <i className="fa-regular fa-message"></i>
                 <h2>New Chat</h2>
+                <div className="tooltip">New Chat</div>
               </div>
               <div className="chat_icons">
                 <i className="fa-solid fa-pen"></i>
@@ -31,6 +37,8 @@ const SideBar = () => {
               <div className="chat">
                 <i className="fa-regular fa-message"></i>
                 <h2>What is Marketing</h2>
+                <div className="tooltip">What is Marketing</div>
+
               </div>
               <div className="chat_icons">
                 <i className="fa-solid fa-pen"></i>
@@ -40,7 +48,9 @@ const SideBar = () => {
             <div className="chat_list_content">
               <div className="chat">
                 <i className="fa-regular fa-message"></i>
-                <h2>developement of marketing</h2>
+                <h2>{handleworldtrim("Give me a list of marketing agencies near me in 5 km", 3)}</h2>
+                <div className="tooltip">Give me a list of marketing agencies near me in 5 km</div>
+
               </div>
               <div className="chat_icons">
                 <i className="fa-solid fa-pen"></i>

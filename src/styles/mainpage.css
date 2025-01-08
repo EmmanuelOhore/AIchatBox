@@ -421,6 +421,37 @@ width: 90% !important;
 
 
 @media (max-width: 350px) {
+
+  .main_page_header {
+    background: var(--header_blue);
+    display: flex;
+    height: 6%;
+    padding: 1.7rem .9rem ;
+  }
+  .main_page_header .logo_container {
+    background-color: var(--logo-bg);
+    width: 4rem;
+    height: 1.5rem;
+  }
+  .main_page_header .logo_container img {
+   width: 100%;
+   height: 1.5rem;
+  }
+  .selection_dropdown_container {
+    gap: .3rem;
+  }
+  .selection_dropdown_container select{
+    font-size:.45rem;
+    background-color: var(--white);
+    padding: .2rem ;
+  }
+.profile_image{
+    gap: .2rem;
+  }
+  .profile_image p,   .profile_image i{
+    font-size: .5rem;
+  }
+  
   .main_page_header{
     padding: 0  .5rem;
   }
@@ -433,6 +464,23 @@ width: 90% !important;
 .suheader h2{
 line-height: 10px;
 font-size: .4rem;
+}
+.input_section input{
+  padding: .3rem;
+}
+.input_section .fa-paper-plane,.input_section .fa-circle-question  {
+  font-size: .6rem;
+  top: 55%;
+}
+.main_ai_content{
+  padding: 0;
+  gap: 0;
+}
+.chat_conversation{
+  gap: .3rem;
+}
+.footer-section  {
+  margin-top: -.66rem;
 }
 }
 

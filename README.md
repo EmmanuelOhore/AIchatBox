@@ -1,42 +1,45 @@
-AI Chatbox Internship
+# AI Chatbox Internship
 
-Overview
+## Overview
 AI Chatbox Internship is a web-based chat application designed to simulate AI-driven conversations. This project showcases real-time chat interactions and demonstrates fundamental frontend and backend integration.
 
-Live Demo
-🔗 https://aichatboxinternship.netlify.app/
+## Live Demo
+🔗 [AI Chatbox Internship](https://aichatboxinternship.netlify.app/)
 
-Features
-User authentication
-Simple and intuitive UI
-
-
-Login Credentials
-Username: user123
-Password: pass123
-
-Technologies Used
-Frontend: HTML, CSS, JavaScript, React
+## Features
+- User authentication
+- Simple and intuitive UI
 
 
+## Login Credentials
+- **Username:** user123  
+- **Password:** pass123
 
+## Technologies Used
+- **Frontend:** HTML, CSS, JavaScript, React
 
-Installation
+## Installation
 To run this project locally, follow these steps:
-Clone the repository:
-git clone https://github.com/EmmanuelOhore/AIchatBox
 
-Navigate to the project directory:
-cd AIChatboxInternship
-Install dependencies:
-npm install
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/EmmanuelOhore/AIchatBox
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd AIchatBox
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+4. **Start the development server:**
+   ```sh
+   npm start
+   ```
 
-Start the development server:
-npm start
-
-Contributing
+## Contributing
 Contributions are welcome! Feel free to fork the repo and submit pull requests.
 
-License
+## License
 This project is licensed under the MIT License.
-

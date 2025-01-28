@@ -1,8 +1,57 @@
-# React + Vite
+##AI Chatbox Internship##
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+AI Chatbox Internship is a web-based chat application designed to simulate AI-driven conversations. This project showcases real-time chat interactions and demonstrates fundamental frontend and backend integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live Demo
+
+🔗 https://aichatboxinternship.netlify.app/
+
+Features
+User authentication
+
+Simple and intuitive UI
+
+##Login Credentials##
+
+Username: user123
+
+Password: pass123
+
+Technologies Used
+
+Frontend: HTML, CSS, JavaScript, React
+
+Backend: Node.js, Express
+
+Database: Firebase (or any backend service used)
+
+Installation
+
+To run this project locally, follow these steps:
+
+Clone the repository:
+
+git clone https://github.com/EmmanuelOhore/AIchatBox
+
+Navigate to the project directory:
+
+cd AIChatboxInternship
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm start
+
+Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit pull requests.
+
+License
+
+This project is licensed under the MIT License.
+
